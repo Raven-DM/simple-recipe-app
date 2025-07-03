@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Simple Recipe</string>
+    <string name="about_maker">Dibuat oleh: -</string>
+    <string name="about_version">Versi Aplikasi: 1.0</string>
+    <string name="add_recipe_name_hint">Nama Resep</string>
+    <string name="add_recipe_desc_hint">Deskripsi Resep</string>
+    <string name="add_recipe_save">Simpan</string>
+    <string name="home_list_recipes">Daftar Resep</string>
+    <string name="home_add_recipe">Tambah Resep</string>
+    <string name="home_favorite">Favorit</string>
+    <string name="home_profile">Profil</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="login_button">Login</string>
+    <string name="login_register_text">Belum punya akun? Register</string>
+    <string name="profile_name">Nama: -</string>
+    <string name="profile_email">Email: -</string>
+    <string name="profile_about">Tentang Aplikasi</string>
+    <string name="register_name_hint">Nama Lengkap</string>
+    <string name="register_email_hint">Email</string>
+    <string name="register_password_hint">Password</string>
+    <string name="register_button">Register</string>
+    <string name="splash_app_name">RecipeApp</string>
+    <string name="splash_logo_desc">Logo aplikasi RecipeApp</string>
+</resources>
