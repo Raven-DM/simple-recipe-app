@@ -1,63 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:padding="20dp"
-    android:layout_width="match_parent" android:layout_height="match_parent">
-
-    <TextView
-        android:id="@+id/tvLoginTitle"
-        android:text="Login ke Simple Recipe"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
-        android:textColor="#4CAF50"/>
-
-    <EditText
-        android:id="@+id/etEmail"
-        android:hint="@string/login_email_hint"
-        android:inputType="textEmailAddress"
-        android:autofillHints="emailAddress"
-        android:layout_width="match_parent" android:layout_height="wrap_content"
-        android:drawableStart="@android:drawable/ic_dialog_email"
-        android:paddingStart="12dp"
-        android:backgroundTint="#2196F3"
-        android:textColor="#222222"
-        android:textColorHint="#888888"
-        android:layout_marginBottom="8dp"/>
-
-    <EditText
-        android:id="@+id/etPassword"
-        android:hint="@string/login_password_hint"
-        android:inputType="textPassword"
-        android:autofillHints="password"
-        android:layout_width="match_parent" android:layout_height="wrap_content"
-        android:drawableStart="@android:drawable/ic_lock_idle_lock"
-        android:paddingStart="12dp"
-        android:backgroundTint="#2196F3"
-        android:textColor="#222222"
-        android:textColorHint="#888888"
-        android:layout_marginBottom="8dp"
-        android:layout_marginTop="10dp"/>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#F7F9FB">
 
     <Button
         android:id="@+id/btnLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rounded_button_green"
         android:text="@string/login_button"
-        android:layout_width="match_parent" android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="#4CAF50"
+        android:textAllCaps="false"
         android:textColor="#FFFFFF"
-        android:textAllCaps="false"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etPassword" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:autofillHints="password"
+        android:background="@drawable/rounded_edittext"
+        android:drawableStart="@android:drawable/ic_lock_idle_lock"
+        android:hint="@string/login_password_hint"
+        android:inputType="textPassword"
+        android:paddingStart="12dp"
+        android:textColor="#222222"
+        android:textColorHint="#888888"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etEmail" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:autofillHints="emailAddress"
+        android:background="@drawable/rounded_edittext"
+        android:drawableStart="@android:drawable/ic_dialog_email"
+        android:hint="@string/login_email_hint"
+        android:inputType="textEmailAddress"
+        android:paddingStart="12dp"
+        android:textColor="#222222"
+        android:textColorHint="#888888"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvLoginTitle" />
+
+    <TextView
+        android:id="@+id/tvLoginTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="244dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="Login ke Simple Recipe"
+        android:textColor="#388E3C"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvRegister"
-        android:text="@string/login_register_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="18dp"
-        android:textColor="#2196F3"
-        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium"
         android:gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-</LinearLayout>
+        android:text="@string/login_register_text"
+        android:textColor="#388E3C"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnLogin"
+        app:layout_constraintVertical_bias="0.048" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
